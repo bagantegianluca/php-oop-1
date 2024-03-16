@@ -1,13 +1,7 @@
 <?php
 class Movie
 {
-    public $title;
-    public $overview;
-    public $duration;
-    public $cast;
-    public $genres;
-
-    public function __construct($title, $overview, $duration, $cast, array $genres)
+    public function __construct(public string $title, public string $overview, public int $duration, public array $cast, public array $genres)
     {
         // select an object property inside a class using the $this variable
         // The $this always refers to the object in wich it was used
