@@ -89,7 +89,11 @@ $matrix->cast = ['Keanu Reeves']; */
                                     <p><?= $movie->overview ?></p>
                                 </div>
                                 <div class="card-footer">
-                                    <?= $movie->genre->name ?>
+                                    <ul class="list-unstyled">
+                                        <? foreach ($movie->genres as $genre) : ?>
+                                            <li><?= $genre->name ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

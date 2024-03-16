@@ -21,7 +21,7 @@ $movies = [
             "Gianni Russo",
             "Talia Shire"
         ],
-        new Genre('Drammatico', 'drama')
+        [new Genre('Drammatico', 'drama'), new Genre('Mafioso', 'mafioso')]
     ), new Movie(
         'Matrix',
         'Matrix lorem psum dolor',
@@ -40,6 +40,6 @@ $movies = [
             "Anthony Ray Parker",
             "Paul Goddard"
         ],
-        new Genre('Azione', 'action')
+        [new Genre('Azione', 'action'), new Genre('Fantasy', 'fantasy')]
     )
 ];
