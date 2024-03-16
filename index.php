@@ -71,7 +71,9 @@ $matrix->cast = ['Keanu Reeves']; */
 
     <header class="bg-dark text-white">
         <nav>
-            <a href=""></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
         </nav>
     </header>
 
@@ -85,6 +87,9 @@ $matrix->cast = ['Keanu Reeves']; */
                                 <div class="card-body">
                                     <h3><?= $movie->title ?></h3>
                                     <p><?= $movie->overview ?></p>
+                                </div>
+                                <div class="card-footer">
+                                    <?= $movie->genre->name ?>
                                 </div>
                             </div>
                         </div>
